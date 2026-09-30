@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotiFlash - Inicio</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <!-- Este bloque se repite igual en todas las paginas.
+       Lo unico que cambia es cual enlace lleva la clase "activo". -->
+  <header class="header">
+    <div class="contenedor header__interior">
+      <a href="index.html" class="logo">
+        NotiFlash <span class="logo__eslogan">| Noticias al instante</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="favoritos.html">Favoritos</a>
+        <a href="gestionar.html">Gestionar</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ SECCION DE BIENVENIDA ============ -->
+    <section class="hero">
+      <div class="contenedor hero__interior">
+        <div class="hero__texto">
+          <h1>Entérate de lo que pasa hoy</h1>
+          <p>Noticias de educación, tecnología, turismo y comercio en un solo lugar.</p>
+          <div class="hero__botones">
+            <a href="noticias.html" class="btn">Ver noticias</a>
+            <a href="contacto.html" class="btn btn--secundario">Contáctanos</a>
+          </div>
+        </div>
+        <div class="hero__imagen">
+          <img src="img/destacada.jpg" alt="Imagen principal de NotiFlash">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NOTICIAS DESTACADAS ============ -->
+    <section class="contenedor seccion">
+      <div class="seccion__encabezado">
+        <div>
+          <h2>Noticias destacadas</h2>
+          <p class="texto-gris">Se cargan dinámicamente desde el archivo noticias.json</p>
+        </div>
+        <a href="noticias.html" class="enlace-azul">Ver todas &gt;</a>
+      </div>
+
+      <!-- IMPORTANTE: este contenedor va VACIO.
+           JavaScript es el que mete las tarjetas adentro (ver js/noticias.js) -->
+      <div id="grid-destacadas" class="grid-noticias"></div>
+    </section>
+
+    <!-- ============ TESTIMONIOS ============ -->
+    <section class="testimonios">
+      <div class="contenedor">
+        <h2 class="centrado">Lo que dicen nuestros lectores</h2>
+        <div class="grid-testimonios">
+          <article class="testimonio">
+            <div class="testimonio__avatar"></div>
+            <div>
+              <h4>Laura Gómez</h4>
+              <span class="estrellas">★★★★★</span>
+              <p>Me gusta que puedo guardar las noticias y leerlas después con calma.</p>
+            </div>
+          </article>
+          <article class="testimonio">
+            <div class="testimonio__avatar"></div>
+            <div>
+              <h4>Andrés Ruiz</h4>
+              <span class="estrellas">★★★★★</span>
+              <p>La página carga rápido y encuentro fácil lo que me interesa.</p>
+            </div>
+          </article>
+          <article class="testimonio">
+            <div class="testimonio__avatar"></div>
+            <div>
+              <h4>Carolina Díaz</h4>
+              <span class="estrellas">★★★★★</span>
+              <p>El filtro por categorías me ahorra mucho tiempo.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LLAMADO A LA ACCION ============ -->
+    <section class="cta">
+      <h2>Crea tu propia noticia en NotiFlash</h2>
+      <a href="gestionar.html" class="btn btn--blanco">Empezar ahora</a>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="contenedor footer__interior">
+      <div>
+        <h3>NotiFlash</h3>
+        <p>Proyecto académico del módulo de Front End.</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li>Educación</li>
+          <li>Tecnología</li>
+          <li>Turismo</li>
+          <li>Comercial</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li>contacto@notiflash.co</li>
+          <li>Tel. 601 000 0000</li>
+          <li>Bogotá, Colombia</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__creditos">© 2026 NotiFlash · Proyecto académico Front End</p>
+  </footer>
+
+  <!-- El script va al final para que el HTML ya exista cuando se ejecute -->
+  <script src="js/noticias.js"></script>
+</body>
+</html>
