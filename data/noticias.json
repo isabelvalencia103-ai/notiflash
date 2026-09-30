@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "titulo": "Colegios públicos estrenan plataforma de refuerzo escolar",
+    "categoria": "Educación",
+    "imagen": "img/noticia1.jpg",
+    "descripcion": "La herramienta permite a los estudiantes repasar matemáticas y lectura desde el celular.",
+    "contenido": "La secretaría de educación presentó una plataforma gratuita de refuerzo escolar dirigida a estudiantes de sexto a once. El contenido está dividido en módulos cortos y funciona también sin conexión, pensando en las zonas rurales. Durante el primer mes se inscribieron más de cuatro mil estudiantes y los docentes pueden hacer seguimiento del avance de cada curso desde un panel propio.",
+    "fecha": "2026-09-12",
+    "autor": "Redacción NotiFlash"
+  },
+  {
+    "id": 2,
+    "titulo": "Las baterías de estado sólido llegarían al mercado en 2027",
+    "categoria": "Tecnología",
+    "imagen": "img/noticia2.jpg",
+    "descripcion": "Prometen más autonomía y tiempos de carga mucho más cortos que las actuales.",
+    "contenido": "Varios fabricantes anunciaron que sus primeras baterías de estado sólido estarían listas para producción en serie hacia 2027. La diferencia con las baterías de litio tradicionales está en el electrolito, que deja de ser líquido y reduce el riesgo de sobrecalentamiento. Los primeros prototipos alcanzan una carga del ochenta por ciento en menos de quince minutos.",
+    "fecha": "2026-09-10",
+    "autor": "Redacción NotiFlash"
+  },
+  {
+    "id": 3,
+    "titulo": "Cinco pueblos del eje cafetero que vale la pena visitar",
+    "categoria": "Turismo",
+    "imagen": "img/noticia3.jpg",
+    "descripcion": "Recorridos cortos, arquitectura colorida y buena mesa a pocas horas de la ciudad.",
+    "contenido": "El eje cafetero concentra algunos de los pueblos mejor conservados del país. Salento, Filandia, Salamina, Jardín y Jericó comparten balcones de madera, calles empinadas y una tradición cafetera que se puede recorrer en fincas abiertas al público. La temporada de menos lluvia va de diciembre a febrero y de julio a agosto.",
+    "fecha": "2026-09-08",
+    "autor": "Redacción NotiFlash"
+  },
+  {
+    "id": 4,
+    "titulo": "El comercio de barrio crece impulsado por los pagos digitales",
+    "categoria": "Comercial",
+    "imagen": "img/noticia4.jpg",
+    "descripcion": "Las tiendas pequeñas reportan más ventas desde que aceptan transferencias.",
+    "contenido": "Un estudio del sector comercio señala que las tiendas de barrio que empezaron a aceptar pagos digitales aumentaron sus ventas en promedio un dieciocho por ciento. La principal razón es que los clientes ya no dependen de tener efectivo disponible. El reto que reportan los tenderos es el manejo de la contabilidad, para lo cual han empezado a usar aplicaciones sencillas de registro.",
+    "fecha": "2026-09-05",
+    "autor": "Redacción NotiFlash"
+  },
+  {
+    "id": 5,
+    "titulo": "Universidades amplían la oferta de programas virtuales",
+    "categoria": "Educación",
+    "imagen": "img/noticia5.jpg",
+    "descripcion": "La modalidad a distancia ya representa una tercera parte de las matrículas nuevas.",
+    "contenido": "Las instituciones de educación superior reportan un crecimiento sostenido en los programas virtuales, especialmente en áreas de tecnología y administración. Entre las razones que dan los estudiantes está la posibilidad de estudiar mientras trabajan y el ahorro en transporte. Los programas mantienen encuentros presenciales opcionales para prácticas y sustentaciones.",
+    "fecha": "2026-09-03",
+    "autor": "Redacción NotiFlash"
+  },
+  {
+    "id": 6,
+    "titulo": "Qué es el desarrollo front end y por qué está tan solicitado",
+    "categoria": "Tecnología",
+    "imagen": "img/noticia6.jpg",
+    "descripcion": "Es la parte del software con la que el usuario interactúa directamente.",
+    "contenido": "El desarrollo front end se encarga de todo lo que el usuario ve y toca en una aplicación: la estructura con HTML, la presentación con CSS y el comportamiento con JavaScript. En los últimos años se sumaron frameworks como Angular, React y Vue, que permiten dividir la interfaz en componentes reutilizables. La demanda de perfiles en esta área sigue creciendo porque cada vez más servicios se prestan a través de la web.",
+    "fecha": "2026-09-01",
+    "autor": "Redacción NotiFlash"
+  }
+]

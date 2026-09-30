@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotiFlash - Favoritos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/favoritos.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="contenedor header__interior">
+      <a href="index.html" class="logo">
+        NotiFlash <span class="logo__eslogan">| Noticias al instante</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="favoritos.html" class="activo">Favoritos</a>
+        <a href="gestionar.html">Gestionar</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor seccion">
+    <h2>Mis favoritos</h2>
+    <p class="texto-gris">Aquí se guardan las noticias que marcaste. La información queda en el localStorage del navegador.</p>
+
+    <div id="aviso" class="aviso"></div>
+
+    <div id="lista-favoritos"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="contenedor footer__interior">
+      <div>
+        <h3>NotiFlash</h3>
+        <p>Proyecto académico del módulo de Front End.</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li>Educación</li>
+          <li>Tecnología</li>
+          <li>Turismo</li>
+          <li>Comercial</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li>contacto@notiflash.co</li>
+          <li>Tel. 601 000 0000</li>
+          <li>Bogotá, Colombia</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__creditos">© 2026 NotiFlash · Proyecto académico Front End</p>
+  </footer>
+
+  
+  <script src="js/noticias.js"></script>
+  <script src="js/favoritos.js"></script>
+</body>
+</html>

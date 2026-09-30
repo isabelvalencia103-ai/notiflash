@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotiFlash - Contacto</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/formularios.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="contenedor header__interior">
+      <a href="index.html" class="logo">
+        NotiFlash <span class="logo__eslogan">| Noticias al instante</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="favoritos.html">Favoritos</a>
+        <a href="gestionar.html">Gestionar</a>
+        <a href="contacto.html" class="activo">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor seccion">
+    <h2>Contáctanos</h2>
+    <p class="texto-gris">Escríbenos y te respondemos lo antes posible.</p>
+
+    <div class="layout-contacto">
+
+      <div class="tarjeta">
+        <!-- novalidate desactiva la validacion del navegador
+             para que se vean las validaciones hechas con JavaScript -->
+        <form id="form-contacto" novalidate>
+
+          <label for="nombre">Nombre completo *</label>
+          <input type="text" id="nombre" class="campo" placeholder="Escribe tu nombre">
+          <span class="error" id="error-nombre"></span>
+
+          <label for="correo">Correo electrónico *</label>
+          <input type="text" id="correo" class="campo" placeholder="ejemplo@correo.com">
+          <span class="error" id="error-correo"></span>
+
+          <label for="asunto">Asunto *</label>
+          <input type="text" id="asunto" class="campo" placeholder="Motivo del mensaje">
+          <span class="error" id="error-asunto"></span>
+
+          <label for="mensaje">Mensaje *</label>
+          <textarea id="mensaje" class="campo" rows="6" placeholder="Cuéntanos aquí tu solicitud (mínimo 10 caracteres)"></textarea>
+          <span class="error" id="error-mensaje"></span>
+
+          <label class="opcion-check">
+            <input type="checkbox" id="acepto"> Acepto el tratamiento de mis datos personales
+          </label>
+          <span class="error" id="error-acepto"></span>
+
+          <div class="form__acciones">
+            <button type="submit" class="btn">Enviar mensaje</button>
+            <button type="button" class="btn btn--secundario" onclick="limpiarFormulario()">Limpiar</button>
+          </div>
+
+        </form>
+      </div>
+
+      <aside>
+        <div id="confirmacion" class="confirmacion" style="display:none;">
+          <strong>Mensaje enviado correctamente</strong>
+          <p>Gracias por escribirnos, pronto te responderemos.</p>
+        </div>
+
+        <div class="tarjeta">
+          <h3>Otros canales</h3>
+          <p class="dato">Correo: contacto@notiflash.co</p>
+          <p class="dato">Teléfono: 601 000 0000</p>
+          <p class="dato">Dirección: Bogotá, Colombia</p>
+          <p class="dato">Horario: lunes a viernes</p>
+          <p class="dato">8:00 a.m. - 5:00 p.m.</p>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="contenedor footer__interior">
+      <div>
+        <h3>NotiFlash</h3>
+        <p>Proyecto académico del módulo de Front End.</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li>Educación</li>
+          <li>Tecnología</li>
+          <li>Turismo</li>
+          <li>Comercial</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li>contacto@notiflash.co</li>
+          <li>Tel. 601 000 0000</li>
+          <li>Bogotá, Colombia</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__creditos">© 2026 NotiFlash · Proyecto académico Front End</p>
+  </footer>
+
+  <script src="js/contacto.js"></script>
+</body>
+</html>

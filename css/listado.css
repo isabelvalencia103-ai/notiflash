@@ -1,0 +1,60 @@
+.encabezado-pagina {
+  background-color: var(--blanco);
+  padding: 22px 0;
+  border-bottom: 1px solid var(--gris-borde);
+}
+
+.miga { font-size: 11px; color: var(--texto-gris); margin: 4px 0 0; }
+
+.layout-listado {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  align-items: start;
+}
+
+.panel-filtros {
+  background-color: var(--blanco);
+  border: 1px solid var(--gris-borde);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.panel-filtros h3 { margin: 18px 0 10px; }
+.panel-filtros h3:first-child { margin-top: 0; }
+
+.opcion {
+  display: block;
+  font-size: 13px;
+  color: var(--texto-gris);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.campo {
+  width: 100%;
+  padding: 9px 12px;
+  font-size: 12px;
+  font-family: inherit;
+  border: 1px solid #C3CCD6;
+  border-radius: 5px;
+  background-color: #F7F9FC;
+  color: var(--texto-oscuro);
+}
+
+.btn--ancho { width: 100%; margin-top: 20px; }
+
+.nota-filtros {
+  font-size: 10px;
+  color: var(--texto-gris);
+  margin-top: 20px;
+  line-height: 1.4;
+}
+
+.zona-resultados #contador { margin: 0 0 16px; }
+
+@media (max-width: 768px) {
+  .layout-listado { grid-template-columns: 1fr; }
+}

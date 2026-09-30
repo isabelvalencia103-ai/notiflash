@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotiFlash - Noticias</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/listado.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="contenedor header__interior">
+      <a href="index.html" class="logo">
+        NotiFlash <span class="logo__eslogan">| Noticias al instante</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="noticias.html" class="activo">Noticias</a>
+        <a href="favoritos.html">Favoritos</a>
+        <a href="gestionar.html">Gestionar</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="encabezado-pagina">
+      <div class="contenedor">
+        <h2>Todas las noticias</h2>
+        <p class="miga">Inicio &gt; Noticias</p>
+      </div>
+    </section>
+
+    <div class="contenedor layout-listado">
+
+      <aside class="panel-filtros">
+        <h3>Filtrar por categoría</h3>
+        <label class="opcion">
+          <input type="radio" name="categoria" value="Todas" checked> Todas
+        </label>
+        <label class="opcion">
+          <input type="radio" name="categoria" value="Educación"> Educación
+        </label>
+        <label class="opcion">
+          <input type="radio" name="categoria" value="Tecnología"> Tecnología
+        </label>
+        <label class="opcion">
+          <input type="radio" name="categoria" value="Turismo"> Turismo
+        </label>
+        <label class="opcion">
+          <input type="radio" name="categoria" value="Comercial"> Comercial
+        </label>
+
+        <h3>Buscar por título</h3>
+        <input type="text" id="input-busqueda" class="campo" placeholder="Escribe una palabra...">
+
+        <h3>Ordenar por</h3>
+        <select id="select-orden" class="campo">
+          <option value="recientes">Más recientes</option>
+          <option value="antiguas">Más antiguas</option>
+          <option value="alfabetico">Título (A-Z)</option>
+        </select>
+
+        <button id="btn-filtrar" class="btn btn--ancho">Aplicar filtros</button>
+
+        <p class="nota-filtros">Los filtros se aplican con JavaScript usando filter() y sort().</p>
+      </aside>
+
+      <section class="zona-resultados">
+        <p id="contador" class="texto-gris"></p>
+        <div id="grid-noticias" class="grid-noticias"></div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="contenedor footer__interior">
+      <div>
+        <h3>NotiFlash</h3>
+        <p>Proyecto académico del módulo de Front End.</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li>Educación</li>
+          <li>Tecnología</li>
+          <li>Turismo</li>
+          <li>Comercial</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li>contacto@notiflash.co</li>
+          <li>Tel. 601 000 0000</li>
+          <li>Bogotá, Colombia</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__creditos">© 2026 NotiFlash · Proyecto académico Front End</p>
+  </footer>
+
+
+<script src="js/noticias.js"></script>
+<script src="js/listado.js"></script>
+</body>
+</html>

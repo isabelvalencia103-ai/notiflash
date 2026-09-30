@@ -1,0 +1,72 @@
+.layout-contacto {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 25px;
+  margin-top: 22px;
+}
+
+.tarjeta {
+  background-color: var(--blanco);
+  border: 1px solid var(--gris-borde);
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 16px 0 6px;
+}
+
+.campo {
+  width: 100%;
+  padding: 11px 14px;
+  font-size: 13px;
+  font-family: inherit;
+  border: 1px solid #C3CCD6;
+  border-radius: 5px;
+  background-color: #F9FBFD;
+  color: var(--texto-oscuro);
+}
+
+textarea.campo { resize: vertical; }
+
+/* Cuando un campo tiene error, se le pone el borde rojo */
+.campo.invalido { border-color: #C0392B; }
+
+.error {
+  display: block;
+  font-size: 11px;
+  color: #C0392B;
+  min-height: 15px;
+  margin-top: 4px;
+}
+
+.opcion-check {
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+  color: var(--texto-gris);
+  margin-top: 18px;
+}
+
+.form__acciones { display: flex; gap: 12px; margin-top: 20px; }
+
+.confirmacion {
+  background-color: #E8F6EC;
+  border: 1px solid #8CC79C;
+  border-radius: 6px;
+  padding: 18px;
+  margin-bottom: 20px;
+  color: #2E7D46;
+}
+
+.confirmacion p { font-size: 12px; margin: 6px 0 0; }
+
+.dato { font-size: 12px; color: var(--texto-gris); margin: 8px 0; }
+
+@media (max-width: 768px) {
+  .layout-contacto { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotiFlash - Gestionar</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/formularios.css">
+  <link rel="stylesheet" href="css/gestionar.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="contenedor header__interior">
+      <a href="index.html" class="logo">
+        NotiFlash <span class="logo__eslogan">| Noticias al instante</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="favoritos.html">Favoritos</a>
+        <a href="gestionar.html" class="activo">Gestionar</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor seccion">
+    <h2>Gestionar noticias</h2>
+    <p class="texto-gris">Aquí se pueden crear noticias nuevas y eliminar las que ya no sirven.</p>
+
+    <div class="layout-gestionar">
+
+      <div class="tarjeta">
+        <h3>Nueva noticia</h3>
+        <form id="form-noticia" novalidate>
+
+          <label for="titulo">Título *</label>
+          <input type="text" id="titulo" class="campo" placeholder="Título de la noticia">
+          <span class="error" id="error-titulo"></span>
+
+          <label for="categoria">Categoría *</label>
+          <select id="categoria" class="campo">
+            <option value="">Seleccione una opción</option>
+            <option value="Educación">Educación</option>
+            <option value="Tecnología">Tecnología</option>
+            <option value="Turismo">Turismo</option>
+            <option value="Comercial">Comercial</option>
+          </select>
+          <span class="error" id="error-categoria"></span>
+
+          <label for="imagen">URL de la imagen</label>
+          <input type="text" id="imagen" class="campo" placeholder="img/noticia1.jpg">
+          <span class="error" id="error-imagen"></span>
+
+          <label for="descripcion">Descripción breve *</label>
+          <input type="text" id="descripcion" class="campo" placeholder="Resumen en pocas líneas">
+          <span class="error" id="error-descripcion"></span>
+
+          <label for="contenido">Contenido completo *</label>
+          <textarea id="contenido" class="campo" rows="5"></textarea>
+          <span class="error" id="error-contenido"></span>
+
+          <div class="form__acciones">
+            <button type="submit" class="btn">Guardar noticia</button>
+            <button type="button" class="btn btn--secundario" onclick="document.getElementById('form-noticia').reset()">Cancelar</button>
+          </div>
+
+        </form>
+      </div>
+
+      <div class="tarjeta">
+        <h3>Noticias publicadas</h3>
+        <table class="tabla">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Título</th>
+              <th>Categoría</th>
+              <th>Fecha</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-noticias"></tbody>
+        </table>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="contenedor footer__interior">
+      <div>
+        <h3>NotiFlash</h3>
+        <p>Proyecto académico del módulo de Front End.</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li>Educación</li>
+          <li>Tecnología</li>
+          <li>Turismo</li>
+          <li>Comercial</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li>contacto@notiflash.co</li>
+          <li>Tel. 601 000 0000</li>
+          <li>Bogotá, Colombia</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__creditos">© 2026 NotiFlash · Proyecto académico Front End</p>
+  </footer>
+
+  
+  <script src="js/noticias.js"></script>
+  <script src="js/gestionar.js"></script>
+</body>
+</html>

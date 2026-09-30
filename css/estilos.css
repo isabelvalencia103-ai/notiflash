@@ -1,0 +1,248 @@
+/* =========================================================
+   NotiFlash - Hoja de estilos principal
+   Los colores son los mismos que definimos en el mockup.
+   ========================================================= */
+
+:root {
+  --azul-oscuro: #17365D;
+  --azul-principal: #2D6CDF;
+  --amarillo: #F2B705;
+  --gris-fondo: #F2F5F8;
+  --gris-borde: #D5DCE4;
+  --texto-oscuro: #2B3844;
+  --texto-gris: #6B7784;
+  --blanco: #FFFFFF;
+}
+
+/* Reinicio basico */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: var(--gris-fondo);
+  color: var(--texto-oscuro);
+  line-height: 1.5;
+}
+
+/* Contenedor central de 1200px, igual que en el mockup */
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 { font-size: 34px; margin: 0 0 12px; }
+h2 { font-size: 24px; margin: 0 0 6px; }
+h3 { font-size: 16px; margin: 0 0 6px; }
+
+.texto-gris { color: var(--texto-gris); font-size: 13px; margin: 0; }
+.centrado { text-align: center; }
+.enlace-azul { color: var(--azul-principal); text-decoration: none; font-weight: bold; font-size: 13px; }
+
+/* ================= HEADER ================= */
+.header {
+  background-color: var(--azul-oscuro);
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.header__interior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  color: var(--blanco);
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo__eslogan {
+  font-size: 12px;
+  font-weight: normal;
+  color: #B9C7D8;
+}
+
+.nav a {
+  color: #E4EBF3;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 26px;
+}
+
+/* La pagina en la que esta el usuario se resalta en amarillo */
+.nav a.activo {
+  color: var(--amarillo);
+  font-weight: bold;
+  border-bottom: 3px solid var(--amarillo);
+  padding-bottom: 4px;
+}
+
+/* ================= SECCION DE BIENVENIDA ================= */
+.hero { background-color: #E3EBF4; padding: 50px 0; }
+
+.hero__interior {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero__texto { flex: 1; }
+.hero__texto h1 { color: var(--azul-oscuro); }
+.hero__imagen { flex: 1; }
+.hero__imagen img { width: 100%; border-radius: 6px; display: block; }
+.hero__botones { margin-top: 24px; display: flex; gap: 16px; }
+
+/* ================= BOTONES ================= */
+.btn {
+  display: inline-block;
+  background-color: var(--azul-principal);
+  color: var(--blanco);
+  padding: 11px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--secundario {
+  background-color: var(--blanco);
+  color: var(--azul-oscuro);
+  border: 1px solid var(--azul-oscuro);
+}
+
+.btn--blanco { background-color: var(--blanco); color: var(--azul-principal); }
+
+/* ================= SECCIONES ================= */
+.seccion { padding: 45px 0; }
+
+.seccion__encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 22px;
+}
+
+/* ================= TARJETAS DE NOTICIA ================= */
+/* auto-fill hace que las tarjetas se reacomoden solas
+   cuando la pantalla es mas pequena (diseno responsive) */
+.grid-noticias {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background-color: var(--blanco);
+  border: 1px solid var(--gris-borde);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  background-color: #C6D0DA;
+}
+
+.card__cuerpo { padding: 16px; flex: 1; display: flex; flex-direction: column; }
+
+.etiqueta {
+  display: inline-block;
+  background-color: #E3EBF4;
+  color: var(--azul-principal);
+  font-size: 10px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 10px;
+  align-self: flex-start;
+}
+
+.card h3 { margin: 12px 0 6px; font-size: 15px; }
+.card p { font-size: 13px; color: var(--texto-gris); margin: 0 0 16px; flex: 1; }
+.card__acciones { display: flex; gap: 10px; }
+
+/* ================= TESTIMONIOS ================= */
+.testimonios { background-color: var(--blanco); padding: 45px 0; }
+
+.grid-testimonios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.testimonio {
+  background-color: #F7F9FC;
+  border: 1px solid var(--gris-borde);
+  border-radius: 6px;
+  padding: 18px;
+  display: flex;
+  gap: 14px;
+}
+
+.testimonio__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #C6D0DA;
+  flex-shrink: 0;
+}
+
+.testimonio h4 { margin: 0; font-size: 13px; }
+.testimonio p { font-size: 12px; color: var(--texto-gris); margin: 6px 0 0; }
+.estrellas { color: var(--amarillo); font-size: 12px; }
+
+/* ================= LLAMADO A LA ACCION ================= */
+.cta {
+  background-color: var(--azul-principal);
+  color: var(--blanco);
+  text-align: center;
+  padding: 35px 20px;
+}
+
+.cta h2 { margin-bottom: 18px; }
+
+/* ================= FOOTER ================= */
+.footer {
+  background-color: var(--azul-oscuro);
+  color: #C5D2E0;
+  padding: 30px 0 14px;
+  margin-top: 0;
+}
+
+.footer__interior {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.footer h3 { color: var(--blanco); }
+.footer h4 { color: var(--amarillo); font-size: 13px; margin: 0 0 8px; }
+.footer ul { list-style: none; padding: 0; margin: 0; font-size: 11px; }
+.footer p { font-size: 12px; }
+
+.footer__creditos {
+  text-align: center;
+  font-size: 10px;
+  color: #8FA3B8;
+  margin: 24px 0 0;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .header__interior { flex-direction: column; height: auto; padding: 10px 0; }
+  .hero__interior { flex-direction: column; }
+  .nav a { margin: 0 10px; }
+}
